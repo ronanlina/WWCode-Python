@@ -1,21 +1,15 @@
-# Basic example on how to print
-# text using different approach in
-# Python.
+""" The Challenge
+Author:
+Description: Aling Nena’s Sari-sari store wants a robot that will ask the
+customer their total bill and payment amount and tell them their change
+(for now, we can allow negative change).
+"""
 
-organization = 'WomenWhoCode!'
+# Build your code below
 
-# You can print it right away!
-print('Hello WomanWhoCode!')
+totalBill = input('How much is your total bill? ')
+payment = input('How much is your payment? ')
 
-# Example of string concatenation
-print('Hello ' + organization)
+change = totalBill - payment
 
-# Using .format() function to attach a string
-print('Hello {}'.format(organization))
-# print(f'Hello {organization}')  # Can use this format with Python3.6
-
-# First, replace the following text with your name
-your_name = 'Ronan'
-
-# Then, uncomment the next line by removing the "#" sign
-#print('{} loves Python!'.format(your_name))
+print('Hi! Your change is {}'.format(change))
